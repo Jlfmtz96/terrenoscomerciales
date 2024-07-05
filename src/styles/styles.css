@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overscroll-behavior: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+    font-family: "Montserrat", sans-serif;
+    height: 100%;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 2em;
+    width: 208px;
+    height: auto;
+    z-index: 10000;
+}
+
+.header {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 2;
+}
+
+.letters, .comerciales {
+    display: flex;
+    text-transform: uppercase;
+}
+
+.letters > div, .comerciales > div {
+    flex: 1;
+    font-size: 150px;
+    font-weight: 400;
+    line-height: 0.8;
+    color: #463f43;
+    text-align: center;
+}
+
+.letters > div {
+    font-size: 260px;
+}
+
+.website-content {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.img-holder {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    clip-path: polygon(37.5% 20%, 62.5% 20%, 62.5% 80%, 37.5% 80%);
+    transform: rotate(30deg);
+}
+
+.img-holder img {
+    position: relative;
+    transform: scale(2);
+}
+
+.content-holder {
+    position: relative;
+    width: 100%;
+    background: #f7f7ff;
+    padding: 1em;
+}
+
+.row {
+    margin: 2em 1em;
+}
+
+.img {
+    width: 200px;
+    height: 275px;
+}
+
+.row:nth-child(2) .img {
+    position: relative;
+    left: 50%;
+}
+
+.row:nth-child(3) .img {
+    position: relative;
+    left: 15%;
+}
+
+.row:nth-child(4) .img {
+    position: relative;
+    left: 70%;
+}
+
+.row:nth-child(6) p {
+    position: relative;
+    left: 30%;
+    margin: 4em 0;
+}
