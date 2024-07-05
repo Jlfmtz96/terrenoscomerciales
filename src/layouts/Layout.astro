@@ -62,6 +62,13 @@ const { title } = Astro.props;
 		z-index: 10000;
 	}
 
+	@media (max-width: 768px) {
+        .logo {
+            margin: 1em;
+            width: 150px; /* Reduce el ancho a 150px en dispositivos pequeños */
+        }
+    }
+
 	.header {
 		position: fixed;
 		top: 50%;
@@ -78,28 +85,28 @@ const { title } = Astro.props;
 
 	.letters > div, .comerciales > div {
 		flex: 1;
-		font-size: 150px;
+		/* font-size: 150px; */
 		font-weight: 400;
 		line-height: 0.8;
 		color: #463f43;
 		text-align: center;
 	}
 
-	.letters > div {
+	/* .letters > div {
 		font-size: 260px;
-	}
+	} */
 
 	.website-content {
 		position: fixed;
 		top: 0;
-		width: 100%;
-		min-height: 100vh;
+		/* width: 100%;
+		min-height: 100vh; */
 	}
 
 	.img-holder {
 		position: relative;
-		width: 100%;
-		height: 100vh;
+		/* width: 100%;
+		height: 100vh; */
 		background: #fff;
 		clip-path: polygon(37.5% 20%, 62.5% 20%, 62.5% 80%, 37.5% 80%);
 		transform: rotate(30deg);
@@ -126,25 +133,76 @@ const { title } = Astro.props;
 		height: 275px;
 	}
 
-	.row:nth-child(2) .img {
-		position: relative;
-		left: 50%;
+	.collage {
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+		grid-template-rows: repeat(5, 1fr);
+
+		grid-gap: 10px;
 	}
 
-	.row:nth-child(3) .img {
-		position: relative;
-		left: 15%;
+	.collage-item1 {
+		background-image: url("./interior-shot-cafe-with-chairs-near-bar-with-wooden-tables.jpg");
+		background-size: cover;
+		background-position: center;
+		grid-column: 1/4;
+		grid-row: 1/2;
 	}
 
-	.row:nth-child(4) .img {
-		position: relative;
-		left: 70%;
+	.collage-item2 {
+		background-image: url("./don-gotera-imagen-2-64efac06d87fd.webp");
+		background-size: cover;
+		background-position: center;
+		grid-column: 1/2;
+		grid-row: 2/5;
 	}
 
-	.row:nth-child(6) p {
-		position: relative;
-		left: 30%;
-		margin: 4em 0;
+	.collage-item3 {
+		background-image: url("./interior-restaurante.jpg");
+		background-size: cover;
+		background-position: center;
+		grid-column: 1/5;
+		grid-row: 5/5;
+	}
+
+	.collage-item4 {
+		background-image: url("./322787126.jpg");
+		background-size: cover;
+		background-position: center;
+		grid-column: 2/4;
+		grid-row: 2/5;
+	}
+
+	.collage-item5 {
+		background-image: url("./198.jpg");
+		background-size: cover;
+		background-position: center;
+		grid-column: 4/6;
+		grid-row: 1/3;
+	}
+
+	.collage-item6 {
+		background-image: url("./frigorifico-comida.jpg");
+		background-size: cover;
+		background-position: center;
+		grid-column: 4/5;
+		grid-row: 3/5;
+	}
+
+	.collage-item7 {
+		background-image: url("./empty-drugstore-with-bottles-packages-full-with-medicaments-retail-shop-shelves-with-pharmaceutical-products-pharmacy-space-filled-with-medical-drugs-pills-vitamins-boxes.jpg");
+		background-size: cover;
+		background-position: center;
+		grid-column: 5/6;
+		grid-row: 3/6;
+	}
+
+	.collage-item8 {
+		background-image: url("./1.jpeg");
+		background-size: cover;
+		background-position: center;
+		grid-column: 6/8;
+		grid-row: 1/6;
 	}
 </style>
 

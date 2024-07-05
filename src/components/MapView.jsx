@@ -41,7 +41,7 @@ export const MapView = () => {
         //   style: 'mapbox://styles/oliva123/clhpfijvk03f201p87l2ae92h', // style URL
           style: 'mapbox://styles/mapbox/streets-v12',
           center: [-101.38816638108801, 20.68052186274997], // starting position [lng, lat]
-          zoom: 15, // starting zoom
+          zoom: 14, // starting zoom
           scrollZoom: false
         });
 
@@ -114,7 +114,7 @@ export const MapView = () => {
 
   return (
         <div className="relative">
-            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-30 backdrop-blur-sm p-2">
+            <div className="hidden md:flex absolute bottom-10 left-1/2 transform -translate-x-1/2 z-30 backdrop-blur-sm p-2">
                 <div className="grid grid-cols-4 gap-3 justify-center mt-4">
                     <button className="flex flex-col group items-center" onClick={() => handleFilterClick("supermercados")}>
                         <div className="rounded-full border border-neutral-900 group-hover:bg-neutral-800 group-hover:text-white w-10 h-10 flex items-center justify-center">
@@ -155,7 +155,7 @@ export const MapView = () => {
                     )}
                 </div> */}
             </div>
-            <div id="map" className="w-auto h-[80vh]" />
+            <div id="map" className="w-full h-96 lg:h-[80vh]" />
 
         </div>
   )

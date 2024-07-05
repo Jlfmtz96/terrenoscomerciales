@@ -9,62 +9,62 @@ import Location from '../components/Location.astro';
 	<main>
 		<Hero />
 
-		<div class="website-content">
-			<div class="img-holder bg-black">
-				<img src="./DJI_0110 RET.jpg" alt="">
+		<div class="website-content w-full min-h-screen">
+			<div class="img-holder bg-black w-full h-screen">
+				<img src="./DJI_0110 RET.jpg" alt="" class="w-full h-full object-cover">
 				<!-- <video autoplay loop muted class="object-cover w-full h-full">
 					<source src="/San-Gerardo.mp4" type="video/mp4" />
 					Your browser does not support the video tag.
 				</video> -->
-				<div class="absolute h-72 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" style="opacity: 0;">
+				<!-- <div class="absolute h-72 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" style="opacity: 0;">
 					<img src="./terrenos comerciales SGE.svg"  alt="" class="w-full h-full">
-				</div>
+				</div> -->
 			</div>
 
 			<div class="content-holder" style="z-index: 5;">
-				<div class="grid grid-cols-2 h-screen relative">
-					<div class="mt-52 px-4 ">
-						<h2 class="text-6xl font-bold animate-text">¿Por qué invertir?</h2>
-						<div class="grid grid-cols-3 gap-6">
-							<div>
-								<div class="w-28 h-28">
+				<div class="lg:grid grid-cols-2 md:h-screen relative">
+					<div class="mt-12 lg:mt-52 md:px-4">
+						<h2 class="text-4xl md:text-6xl font-bold animate-text text-center lg:text-left">¿Por qué invertir?</h2>
+						<div class="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-8">
+							<div class="flex flex-col justify-center items-center"> 
+								<div class="w-20 md:w-28 h-20 md:h-28">
 									<img src="./icons8-doble-arriba-100.png" alt="" class="w-full h-full animate-image">
 								</div>
-								<span class="text-xl font-semibold">Plusvalía</span>
+								<span class="md:text-xl font-semibold">Plusvalía</span>
 							</div>
-							<div>
-								<div class="w-28 h-28">
+							<div class="flex flex-col justify-center items-center">
+								<div class="w-20 md:w-28 h-20 md:h-28">
 									<img src="./icons8-cohete-lanzado-100.png" alt="" class="w-full h-full animate-image">
 								</div>
-								<span class="text-xl font-semibold">Desarrollo, proyección y crecimiento</span>
+								<span class="md:text-xl font-semibold">Desarrollo, proyección y crecimiento</span>
 							</div>
-							<div>
-								<div class="w-28 h-28">
+							<div class="flex flex-col justify-center items-center">
+								<div class="w-20 md:w-28 h-20 md:h-28">
 									<img src="./icons8-ubicación-de-la-tienda-100.png" alt="" class="w-full h-full animate-image">
 								</div>
-								<span class="text-xl font-semibold">Crecimiento habitacional, comercial e industrial</span>
+								<span class="md:text-xl font-semibold">Crecimiento habitacional, comercial e industrial</span>
 							</div>
-							<div>
-								<div class="w-28 h-28">
+							<div class="flex flex-col justify-center items-center">
+								<div class="w-20 md:w-28 h-20 md:h-28">
 									<img src="./icons8-efectivo-en-mano-100.png" alt="" class="w-full h-full animate-image">
 								</div>
-								<span class="text-xl font-semibold">Oportunidades de inversión</span>
+								<span class="md:text-xl font-semibold">Oportunidades de inversión</span>
 							</div>
-							<div>
-								<div class="w-28 h-28">
+							<div class="flex flex-col justify-center items-center">
+								<div class="w-20 md:w-28 h-20 md:h-28">
 									<img src="./icons8-en-alza-100.png" alt="" class="w-full h-full animate-image">
 								</div>
-								<span class="text-xl font-semibold">Rentabilidad y viabilidad comercial</span>
+								<span class="md:text-xl font-semibold">Rentabilidad y viabilidad comercial</span>
 							</div>
-							<div>
-								<div class="w-28 h-28">
+							<div class="flex flex-col justify-center items-center">
+								<div class="w-20 md:w-28 h-20 md:h-28">
 									<img src="./icons8-mantenimiento-100.png" alt="" class="w-full h-full animate-image">
 								</div>
-								<span class="text-xl font-semibold">Servicios</span>
+								<span class="md:text-xl font-semibold">Servicios</span>
 							</div>
 						</div>
 					</div>
-					<div class="">
+					<div class="hidden md:flex mt-6 lg:mt-0">
 						<video autoplay loop muted class=" w-full h-full">
 							<source src="/San-Gerardo.mp4" type="video/mp4" />
 							Your browser does not support the video tag.
@@ -72,14 +72,14 @@ import Location from '../components/Location.astro';
 					</div>
 				</div>
 
-				<div class="grid grid-cols-10 gap-2 relative h-screen">
-					<div class="col-span-5 bg-teal-700 h-[80dvh]">
+				<div class="grid grid-cols-2 lg:grid-cols-10 gap-2 relative">
+					<div class="col-span-2 lg:col-span-5 bg-teal-700">
 					  <img src="./DJI_0097 RET.jpg" alt="" class="w-full h-full object-cover" />
 					</div>
-					<div class="col-span-5 bg-[#403A3E] h-[80dvh] p-20 animate-text">
-					  <span class="uppercase text-xl tracking-widest font-semibold text-[#469CA6]">Terrenos comerciales</span>
-					  <h2 class="font-bold text-7xl text-white mt-6">Construye tu futuro empresarial</h2>
-					  <p class="text-justify mt-10 text-2xl text-white">
+					<div class="col-span-2 lg:col-span-5 bg-[#403A3E] p-6 md:p-16 lg:p-20 animate-text">
+					  <span class="uppercase text-sm md:text-xl tracking-widest font-semibold text-[#469CA6]">Terrenos comerciales</span>
+					  <h2 class="font-bold text-4xl md:text-6xl text-white mt-6">Construye tu futuro empresarial</h2>
+					  <p class="text-justify mt-10 text-lg md:text-2xl text-white">
 						Este desarrollo esta ubicado estratégicamente, ya que dentro de su
 						entorno, cuenta con cercanía a las principales vías de acceso,
 						Universidades, tiendas de conveniencia, comercio en general y Plaza
@@ -87,93 +87,93 @@ import Location from '../components/Location.astro';
 						mayor crecimiento y desarrollo en Aguascalientes.
 					  </p>
 					  <div class="mt-10">
-						  <a href="#"class="rounded-xl bg-[#469CA6] px-7 py-2.5 text-2xl font-semibold text-white shadow-sm hover:bg-teal-500">
+						  <a href="#"class="rounded-xl bg-[#469CA6] px-7 py-2.5 md:text-2xl font-semibold text-white shadow-sm hover:bg-teal-500">
 							  Más información
 						  </a>
 					  </div>
 					</div>
-					<div class="col-span-3 bg-[#42929d] h-64">
+					<div class="lg:col-span-3 bg-[#42929d] h-64">
 					  <img src="./UPA.webp" alt="" class="w-full h-full object-cover" />
 					</div>
-					<div class="col-span-2 bg-blue-900 h-64">
+					<div class="lg:col-span-2 bg-blue-900 h-64">
 					  <img src="./1.jpeg" alt="" class="w-full h-full object-cover" />
 					</div>
-					<div class="col-span-3 bg-blue-600 h-64">
+					<div class="hidden lg:flex lg:col-span-3 bg-blue-600 h-64">
 					  <img src="./IMG_7130.jpg" alt="" class="w-full h-full object-cover" />
 					</div>
-					<div class="col-span-2 bg-blue-900 h-64">
+					<div class="hidden lg:flex lg:col-span-2 bg-blue-900 h-64">
 					  <img src="./3.png" alt="" class="w-full h-full object-cover" />
 					</div>
 				</div>
 
-				<Location />
+				<div class="">
+					<Location />
+				</div>
 
-				<div class="mt-16 p-16 max-h-screen overflow-hidden">
-					<div class="grid grid-cols-10 gap-4">
-					  <div class="col-span-5 grid grid-cols-3 gap-4">
-						<div class="col-span-2 h-[60vh] pt-20">
-						  <span class="uppercase text-xl tracking-widest font-semibold text-[#475569]">Empieza a construir ideas</span>
-						  <h2 class="font-bold text-7xl text-[#0F172A] mt-6">Contáctanos</h2>
-						  <form class="mt-6 flex flex-col gap-6">
-							<div>
-							  <label for="nombre" class="block text-lg font-medium text-[#463f43]">Nombre</label>
-							  <input type="text" id="nombre" name="nombre" required
-									class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm text-xl py-2 px-6 border-gray-300 rounded-md"/>
+				<div class="mt-16 p-4 lg:p-0">
+					<div class="lg:grid grid-cols-10">
+						<div class="lg:px-16 col-span-4">
+							<span class="uppercase text-sm md:text-xl tracking-widest font-semibold text-[#475569]">Empieza a construir ideas</span>
+							<h2 class="font-bold text-4xl md:text-6xl text-[#0F172A] mt-6">Contáctanos</h2>
+							<form class="mt-6 flex flex-col gap-6">
+							  <div>
+								<label for="nombre" class="block text-lg font-medium text-[#463f43]">Nombre</label>
+								<input type="text" id="nombre" name="nombre" required
+									  class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm text-xl py-2 px-6 border-gray-300 rounded-md"/>
+							  </div>
+							  <div>
+								<label for="apellidos" class="block text-lg font-medium text-[#463f43]">Apellidos</label>
+								<input type="text" id="apellidos" name="apellidos" required
+									  class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm text-xl py-2 px-6 border-gray-300 rounded-md"/>
+							  </div>
+							  <div>
+								<label for="correo" class="block text-lg font-medium text-[#463f43]">Correo electrónico</label>
+								<input type="email" id="correo" name="correo" required
+									  class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm text-xl py-2 px-6 border-gray-300 rounded-md"/>
+							  </div>
+							  <div>
+								<label for="telefono" class="block text-lg font-medium text-[#463f43]">Teléfono</label>
+								<input type="tel" id="telefono" name="telefono" required
+									  class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm text-xl py-2 px-6 border-gray-300 rounded-md"/>
+							  </div>
+							  <div class="flex items-center">
+								<input id="aviso_privacidad" name="aviso_privacidad" type="checkbox" required
+									  class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"/>
+								<label for="aviso_privacidad" class="ml-2 block text-sm text-[#463f43]">
+								  He leído y acepto el aviso de privacidad
+								</label>
+							  </div>
+							  <div class="">
+								<button type="submit"
+										class="w-full flex justify-center bg-[#469CA6] border border-transparent rounded-xl py-2 px-7 items-center font-medium text-xl text-white shadow-sm hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+								  Enviar Datos
+								</button>
+							  </div>
+							</form>
+						</div>
+						<!-- <div class="">
+
+				
+							<div class="pt-16 px-4 max-h-[600px] hidden 2xl:flex">
+							<img src="./don-gotera-imagen-2-64efac06d87fd.webp" alt="" class="w-full h-full object-cover" />
 							</div>
-							<div>
-							  <label for="apellidos" class="block text-lg font-medium text-[#463f43]">Apellidos</label>
-							  <input type="text" id="apellidos" name="apellidos" required
-									class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm text-xl py-2 px-6 border-gray-300 rounded-md"/>
-							</div>
-							<div>
-							  <label for="correo" class="block text-lg font-medium text-[#463f43]">Correo electrónico</label>
-							  <input type="email" id="correo" name="correo" required
-									class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm text-xl py-2 px-6 border-gray-300 rounded-md"/>
-							</div>
-							<div>
-							  <label for="telefono" class="block text-lg font-medium text-[#463f43]">Teléfono</label>
-							  <input type="tel" id="telefono" name="telefono" required
-									class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm text-xl py-2 px-6 border-gray-300 rounded-md"/>
-							</div>
-							<div class="flex items-center">
-							  <input id="aviso_privacidad" name="aviso_privacidad" type="checkbox" required
-									class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"/>
-							  <label for="aviso_privacidad" class="ml-2 block text-sm text-[#463f43]">
-								He leído y acepto el aviso de privacidad
-							  </label>
-							</div>
-							<div class="">
-							  <button type="submit"
-									  class="w-full flex justify-center bg-[#469CA6] border border-transparent rounded-xl py-2 px-7 items-center font-medium text-xl text-white shadow-sm hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-								Enviar Datos
-							  </button>
-							</div>
-						  </form>
+						</div> -->
+						<div class="hidden lg:grid gap-3 col-span-6">
+							<div class="collage-item1"></div>
+							<div class="collage-item2"></div>
+							<div class="collage-item3"></div>
+							<div class="collage-item4"></div>
+							<div class="collage-item5"></div>
+							<div class="collage-item6"></div>
+							<div class="collage-item7"></div>
+							<div class="collage-item8"></div>
 						</div>
-			
-						<div class="pt-16 px-4 max-h-[600px]">
-						  <img src="./don-gotera-imagen-2-64efac06d87fd.webp" alt="" class="w-full h-full object-cover" />
-						</div>
-					  </div>
-					  <div class="col-span-5 grid grid-cols-3 gap-4">
-						<div class="pt-20">
-						  <img src="./frigorifico-comida.jpg" alt="" class="w-full h-full object-cover" />
-						</div>
-						<div class="col-span-2 bg-blue-900">
-						  <img src="./198.jpg" alt="" class="w-full h-full object-cover" />
-						</div>
-						<div class="col-span-3 bg-blue-400 h-[30vh]">
-						  <img src="./interior-restaurante.jpg" alt="" class="w-full h-full object-cover" />
-						</div>
-						<div class="pt-8 px-2">
-						  <img src="./empty-drugstore-with-bottles-packages-full-with-medicaments-retail-shop-shelves-with-pharmaceutical-products-pharmacy-space-filled-with-medical-drugs-pills-vitamins-boxes.jpg" alt="" class="w-full h-full object-cover" />
-						</div>
-						<div class="col-span-2 bg-blue-400 h-[30vh]">
-						  <img src="./interior-shot-cafe-with-chairs-near-bar-with-wooden-tables.jpg" alt="" class="w-full h-full object-cover" />
-						</div>
-					  </div>
+
 					</div>
 				</div>
+
+				
+
 			</div>
 		</div>
 	</main>

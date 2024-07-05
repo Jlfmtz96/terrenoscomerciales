@@ -2,13 +2,13 @@
 import { MapView } from "./MapView";
 ---
 
-<div id="location" class="mt-20 h-[80vh]">
+<div id="location" class="mt-20 w-full lg:h-[80vh]">
     <div class="bg-slate-200 flex items-center justify-center">
         <div class="w-full h-full">
             <MapView client:load />
         </div>
     </div>
-    <div class="relative px-28 flex flex-col justify-center">
+    <div class="hidden relative px-20 lg:flex flex-col justify-center">
         <h3 class="font-bold text-5xl">Conoce tu entorno</h3>
         <ul class="mt-10 text-2xl space-y-5 text-[#0F172A]">
             <li>Complejos industriales, <span class="font-semibold">Filiales de las plantas armadoras</span></li>
@@ -20,9 +20,14 @@ import { MapView } from "./MapView";
 </div>
 
 <style>
-	#location {
-        /* background: #13151a; */
-		display: grid;
-		grid-template-columns: 750px 1fr;/*La primer columna 350px lo demas 1 fracción */
-	}
+    #location {
+        display: grid;
+        grid-template-columns: 750px 1fr; /* La primera columna 750px, lo demás 1 fracción */
+    }
+
+    @media (max-width: 768px) {
+        #location {
+            grid-template-columns: 1fr; /* En pantallas pequeñas, una sola columna */
+        }
+    }
 </style>
